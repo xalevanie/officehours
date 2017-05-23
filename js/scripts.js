@@ -1,7 +1,3 @@
-
-
-// https://raw.githubusercontent.com/Airtable/airtable.js/master/build/airtable.browser .js
-
 // @codekit-prepend "jquery.js";
 // @codekit-prepend "semantic.js";
 // @codekit-prepend "airtable.js";
@@ -25,30 +21,46 @@ base('Office Hours').select({
     records.forEach(function(record) {
        
       // Check-Check 
-      // console.log('Retrieved', record.get('Name'));
-      console.log( record.fields['In Office'] );
+      // console.log( record.get('Name') );
+      // console.log( record );
       
-      // Display Data or show template
-        
-        showOfficeHours = (record); 
-
+      // Display Data or Show Template
+      showOfficeHours( record );
 
     });
 });
 
-// Show Office data
+// Show Office Hours
 var showOfficeHours = function( record ) {
-    //store template
-    console.log( record );
+  
+  //console.log( record.fields.Image["0"].url );
+  // console.log( record.fields['Name']);
+  console.log( record.fields['In Office']);
     
-    var template = 
-`<tr class="">
-<td><img src="" alt=""></td>
-<td> ${records.field['Name']} </td>
-<td><i class="icon checkmark"></i>Available</td>
-</tr>
-`
-    //send template
+  var status;
+  var status_message;
     
+  if ( record.fields['In Office'] === true ) {
+      status = 'positive';
+      status_message = '<i class="icon checkmark"></i> In-Office';
+  } else {
+      status_message = '<i class="icon close"></i> Unavailable';
+  }
     
-};
+  // Store Template
+  var template = 
+    `
+    <tr class=" ${status} ">
+       <td>
+          <img src=" ${record.fields.Image["0"].url} " alt=" ${record.fields['Name']} ">
+      </td>
+      <td> ${record.fields['Name']} </td>
+      <td> ${status_message} </td>
+    </tr>
+    `;
+  
+  // Pass/Send Template
+  $('#office-hours').append(template);
+    
+}; 
+
