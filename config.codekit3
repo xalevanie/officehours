@@ -95,7 +95,7 @@
 		},
 	"\/img\/favicons\/android-chrome-192x192.png": {
 		"ft": 32768,
-		"iS": 39826,
+		"iS": 44770,
 		"l": 1,
 		"oA": 0,
 		"oAP": "\/docs\/img\/favicons\/android-chrome-192x192.png",
@@ -105,7 +105,7 @@
 		},
 	"\/img\/favicons\/android-chrome-512x512.png": {
 		"ft": 32768,
-		"iS": 223203,
+		"iS": 280072,
 		"l": 1,
 		"oA": 0,
 		"oAP": "\/docs\/img\/favicons\/android-chrome-512x512.png",
@@ -115,7 +115,7 @@
 		},
 	"\/img\/favicons\/apple-touch-icon.png": {
 		"ft": 32768,
-		"iS": 35625,
+		"iS": 39721,
 		"l": 1,
 		"oA": 0,
 		"oAP": "\/docs\/img\/favicons\/apple-touch-icon.png",
@@ -131,7 +131,7 @@
 		},
 	"\/img\/favicons\/favicon-16x16.png": {
 		"ft": 32768,
-		"iS": 1237,
+		"iS": 1202,
 		"l": 1,
 		"oA": 0,
 		"oAP": "\/docs\/img\/favicons\/favicon-16x16.png",
@@ -141,7 +141,7 @@
 		},
 	"\/img\/favicons\/favicon-32x32.png": {
 		"ft": 32768,
-		"iS": 2272,
+		"iS": 2464,
 		"l": 1,
 		"oA": 0,
 		"oAP": "\/docs\/img\/favicons\/favicon-32x32.png",
@@ -155,9 +155,17 @@
 		"oAP": "\/docs\/img\/favicons\/favicon.ico",
 		"oF": 0
 		},
+	"\/img\/favicons\/manifest.json": {
+		"ft": 524288,
+		"oA": 0,
+		"oAP": "\/docs\/img\/favicons\/manifest.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"\/img\/favicons\/mstile-150x150.png": {
 		"ft": 32768,
-		"iS": 20590,
+		"iS": 22265,
 		"l": 1,
 		"oA": 0,
 		"oAP": "\/docs\/img\/favicons\/mstile-150x150.png",
@@ -177,7 +185,7 @@
 		},
 	"\/img\/menu.png": {
 		"ft": 32768,
-		"iS": 598,
+		"iS": 168,
 		"l": 1,
 		"oA": 0,
 		"oAP": "\/docs\/img\/menu.png",
@@ -194,7 +202,7 @@
 	"\/js\/airtable.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/docs\/js\/airtable.js",
 		"oF": 0,
 		"sC": 0,
